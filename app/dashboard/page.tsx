@@ -6,14 +6,14 @@ import { BarChartComponent } from './_components/bar-chart'
 import { BarChartBetter } from './_components/bar-chart-better'
 
 export default async function Dashboard() {
-
+  console.log(process.env);  // Hier werden die Umgebungsvariablen geloggt
 
   return (
     <div className='flex flex-col justify-center items-start flex-wrap px-4 pt-4 gap-4'>
       <Card className='w-[20rem]'>
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-sm font-medium">
-            Welcome to Nextjs Starter Kit
+            Welcome to MedXAssist
           </CardTitle>
           <svg
             xmlns="http://www.w3.org/2000/svg"

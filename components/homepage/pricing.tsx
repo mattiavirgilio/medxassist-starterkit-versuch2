@@ -167,31 +167,31 @@ export default function Pricing() {
   const plans = [
     {
       title: "Basic",
-      monthlyPrice: 10,
-      yearlyPrice: 100,
-      description: "Essential features you need to get started",
-      features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3"],
+      monthlyPrice: 197,
+      yearlyPrice: 1997,
+      description: "Chatbot-Integration",
+      features: ["SMS/WhatsApp-Chatbot", "Chatbasierte Terminvereinbarung", "Automatisierte Datenverarbeitung"],
       priceIdMonthly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
       priceIdYearly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
-      actionLabel: "Get Started",
+      actionLabel: "Jetzt Starten",
     },
     {
       title: "Pro",
-      monthlyPrice: 25,
-      yearlyPrice: 250,
-      description: "Perfect for owners of small & medium businessess",
-      features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3"],
-      actionLabel: "Get Started",
+      monthlyPrice: 597,
+      yearlyPrice: 5970,
+      description: "Telefonische KI-Assistenz",
+      features: ["Automatische Anruf Entgegennahme", "Verarbeitung von Patientendaten", "Automatisierte Terminvereinbarung"],
+      actionLabel: "Jetzt Starten",
       priceIdMonthly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
       priceIdYearly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
       popular: true,
     },
     {
-      title: "Enterprise",
-      price: "Custom",
-      description: "Dedicated support and infrastructure to fit your needs",
-      features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3", "Super Exclusive Feature"],
-      actionLabel: "Contact Sales",
+      title: "Premium",
+      price: "1097",
+      description: "Erweiterte Dienste und Automatisierung",
+      features: ["24/7 Unterstützung durch den KI-Assistenten", "Exklusiver Zugriff auf erweiterte Analyse- und Berichtsfunktionen", "Vollständige Einsicht und Integration ins Patienten-CRM"],
+      actionLabel: "Jetzt STarten",
       priceIdMonthly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
       priceIdYearly: process.env.NEXT_PUBLIC_STRIPE_PRICE_ID,
       exclusive: true,
@@ -200,7 +200,7 @@ export default function Pricing() {
 
   return (
     <div>
-      <PricingHeader title="Sample Pricing Plans" subtitle="Use these sample pricing cards in your SAAS" />
+      <PricingHeader title="MedXAssist: Pläne" subtitle="Alle Preise sind ohne MwSt. anzusehen" />
       <PricingSwitch onSwitch={togglePricingPeriod} />
       <section className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-8 mt-8">
         {plans.map((plan) => {
