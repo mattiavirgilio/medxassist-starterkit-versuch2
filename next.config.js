@@ -57,9 +57,9 @@ const nextConfig = {
     config.resolve.alias['@components'] = path.resolve(__dirname, 'components');
     return config;
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
-eslint: {
-  ignoreDuringBuilds: true,
-},
 
 module.exports = nextConfig;
